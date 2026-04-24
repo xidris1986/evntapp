@@ -15,8 +15,8 @@ jobs:
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.27.0'
           channel: 'stable'
+          cache: true
 
       - name: Enable Windows desktop
         run: flutter config --enable-windows-desktop
@@ -32,4 +32,4 @@ jobs:
         with:
           name: windows-exe
           path: build/windows/x64/runner/Release/
-        
+          
